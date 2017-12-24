@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1020555BA8B00B472C0536D9 /* Pods_ISSPassTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFE7B042C2A7045D2908FBD /* Pods_ISSPassTimesUITests.framework */; };
+		4449DEDAE4697BEE31885CB1 /* Pods_ISSPassTimesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8C79E5E43367767577C73D /* Pods_ISSPassTimesTests.framework */; };
 		5F7F86011FF04E0700FC440E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86001FF04E0700FC440E /* AppDelegate.swift */; };
 		5F7F86031FF04E0700FC440E /* ISSPassTimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86021FF04E0700FC440E /* ISSPassTimesViewController.swift */; };
 		5F7F86061FF04E0700FC440E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F86041FF04E0700FC440E /* Main.storyboard */; };
@@ -17,6 +19,7 @@
 		5F7F86331FF057DF00FC440E /* ISSPassTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86321FF057DF00FC440E /* ISSPassTimes.swift */; };
 		5F7F86361FF05B6700FC440E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86351FF05B6700FC440E /* Constant.swift */; };
 		5F7F86381FF05B8700FC440E /* ISSPassTimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86371FF05B8700FC440E /* ISSPassTimesViewModel.swift */; };
+		C4DAC3EEA033A6B646C21674 /* Pods_ISSPassTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CEB5933BCA7644E44028E74 /* Pods_ISSPassTimes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090529BAF4580CF1038D061F /* Pods-ISSPassTimes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimes.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimes/Pods-ISSPassTimes.release.xcconfig"; sourceTree = "<group>"; };
+		15B36E33E9A41A056FC7A5EA /* Pods-ISSPassTimesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimesUITests/Pods-ISSPassTimesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1CEB5933BCA7644E44028E74 /* Pods_ISSPassTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSPassTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39FDCD2E87F1809A326172FA /* Pods-ISSPassTimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimesTests/Pods-ISSPassTimesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EFE7B042C2A7045D2908FBD /* Pods_ISSPassTimesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSPassTimesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C8C79E5E43367767577C73D /* Pods_ISSPassTimesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSPassTimesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7F85FD1FF04E0700FC440E /* ISSPassTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSPassTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7F86001FF04E0700FC440E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F7F86021FF04E0700FC440E /* ISSPassTimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimesViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +62,9 @@
 		5F7F86321FF057DF00FC440E /* ISSPassTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimes.swift; sourceTree = "<group>"; };
 		5F7F86351FF05B6700FC440E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5F7F86371FF05B8700FC440E /* ISSPassTimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimesViewModel.swift; sourceTree = "<group>"; };
+		60E7F4CC7E9B0B0D239D2E5B /* Pods-ISSPassTimesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimesUITests/Pods-ISSPassTimesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		62BC69C3897A0F144F38A5B9 /* Pods-ISSPassTimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimesTests/Pods-ISSPassTimesTests.release.xcconfig"; sourceTree = "<group>"; };
+		EFAFDA3BC393E7CA0A9C3245 /* Pods-ISSPassTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimes/Pods-ISSPassTimes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DAC3EEA033A6B646C21674 /* Pods_ISSPassTimes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4449DEDAE4697BEE31885CB1 /* Pods_ISSPassTimesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1020555BA8B00B472C0536D9 /* Pods_ISSPassTimesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EE9F1B280401977B44BE7D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFAFDA3BC393E7CA0A9C3245 /* Pods-ISSPassTimes.debug.xcconfig */,
+				090529BAF4580CF1038D061F /* Pods-ISSPassTimes.release.xcconfig */,
+				39FDCD2E87F1809A326172FA /* Pods-ISSPassTimesTests.debug.xcconfig */,
+				62BC69C3897A0F144F38A5B9 /* Pods-ISSPassTimesTests.release.xcconfig */,
+				60E7F4CC7E9B0B0D239D2E5B /* Pods-ISSPassTimesUITests.debug.xcconfig */,
+				15B36E33E9A41A056FC7A5EA /* Pods-ISSPassTimesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5F7F85F41FF04E0700FC440E = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +115,8 @@
 				5F7F86141FF04E0700FC440E /* ISSPassTimesTests */,
 				5F7F861F1FF04E0700FC440E /* ISSPassTimesUITests */,
 				5F7F85FE1FF04E0700FC440E /* Products */,
+				0EE9F1B280401977B44BE7D8 /* Pods */,
+				6943FE45CCCEC75B16E9F17A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +204,16 @@
 			path = classes;
 			sourceTree = "<group>";
 		};
+		6943FE45CCCEC75B16E9F17A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CEB5933BCA7644E44028E74 /* Pods_ISSPassTimes.framework */,
+				5C8C79E5E43367767577C73D /* Pods_ISSPassTimesTests.framework */,
+				4EFE7B042C2A7045D2908FBD /* Pods_ISSPassTimesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F7F86251FF04E0700FC440E /* Build configuration list for PBXNativeTarget "ISSPassTimes" */;
 			buildPhases = (
+				3429D809A8D79EFE80E0F8E2 /* [CP] Check Pods Manifest.lock */,
 				5F7F85F91FF04E0700FC440E /* Sources */,
 				5F7F85FA1FF04E0700FC440E /* Frameworks */,
 				5F7F85FB1FF04E0700FC440E /* Resources */,
+				7D3BF97A30F9312CA179D223 /* [CP] Embed Pods Frameworks */,
+				234D013E1DDBAEC4BB79094F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F7F86281FF04E0700FC440E /* Build configuration list for PBXNativeTarget "ISSPassTimesTests" */;
 			buildPhases = (
+				30385F2D160833E812441212 /* [CP] Check Pods Manifest.lock */,
 				5F7F860D1FF04E0700FC440E /* Sources */,
 				5F7F860E1FF04E0700FC440E /* Frameworks */,
 				5F7F860F1FF04E0700FC440E /* Resources */,
+				EAF576E1734D4C54BFEA2967 /* [CP] Embed Pods Frameworks */,
+				422FA5FDC13D8447A0C089FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,9 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F7F862B1FF04E0700FC440E /* Build configuration list for PBXNativeTarget "ISSPassTimesUITests" */;
 			buildPhases = (
+				19603695AAB16F712677CAE9 /* [CP] Check Pods Manifest.lock */,
 				5F7F86181FF04E0700FC440E /* Sources */,
 				5F7F86191FF04E0700FC440E /* Frameworks */,
 				5F7F861A1FF04E0700FC440E /* Resources */,
+				1649A6BCA348F8117BB4B2B4 /* [CP] Embed Pods Frameworks */,
+				B638B556C19A1551CF9E9B06 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,6 +351,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1649A6BCA348F8117BB4B2B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimesUITests/Pods-ISSPassTimesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19603695AAB16F712677CAE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ISSPassTimesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		234D013E1DDBAEC4BB79094F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimes/Pods-ISSPassTimes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30385F2D160833E812441212 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ISSPassTimesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3429D809A8D79EFE80E0F8E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ISSPassTimes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		422FA5FDC13D8447A0C089FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimesTests/Pods-ISSPassTimesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D3BF97A30F9312CA179D223 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimes/Pods-ISSPassTimes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimes/Pods-ISSPassTimes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B638B556C19A1551CF9E9B06 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimesUITests/Pods-ISSPassTimesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF576E1734D4C54BFEA2967 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimesTests/Pods-ISSPassTimesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F7F85F91FF04E0700FC440E /* Sources */ = {
@@ -476,6 +677,7 @@
 		};
 		5F7F86261FF04E0700FC440E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAFDA3BC393E7CA0A9C3245 /* Pods-ISSPassTimes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +692,7 @@
 		};
 		5F7F86271FF04E0700FC440E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 090529BAF4580CF1038D061F /* Pods-ISSPassTimes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +707,7 @@
 		};
 		5F7F86291FF04E0700FC440E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39FDCD2E87F1809A326172FA /* Pods-ISSPassTimesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +724,7 @@
 		};
 		5F7F862A1FF04E0700FC440E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BC69C3897A0F144F38A5B9 /* Pods-ISSPassTimesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +741,7 @@
 		};
 		5F7F862C1FF04E0700FC440E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E7F4CC7E9B0B0D239D2E5B /* Pods-ISSPassTimesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +757,7 @@
 		};
 		5F7F862D1FF04E0700FC440E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B36E33E9A41A056FC7A5EA /* Pods-ISSPassTimesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

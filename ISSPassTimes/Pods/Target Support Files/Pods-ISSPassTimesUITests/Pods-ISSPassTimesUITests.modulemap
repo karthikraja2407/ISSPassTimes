@@ -1,0 +1,6 @@
+framework module Pods_ISSPassTimesUITests {
+  umbrella header "Pods-ISSPassTimesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
