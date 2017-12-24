@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5F7F86011FF04E0700FC440E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86001FF04E0700FC440E /* AppDelegate.swift */; };
-		5F7F86031FF04E0700FC440E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86021FF04E0700FC440E /* ViewController.swift */; };
+		5F7F86031FF04E0700FC440E /* ISSPassTimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86021FF04E0700FC440E /* ISSPassTimesViewController.swift */; };
 		5F7F86061FF04E0700FC440E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F86041FF04E0700FC440E /* Main.storyboard */; };
 		5F7F86081FF04E0700FC440E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F86071FF04E0700FC440E /* Assets.xcassets */; };
 		5F7F860B1FF04E0700FC440E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F86091FF04E0700FC440E /* LaunchScreen.storyboard */; };
 		5F7F86161FF04E0700FC440E /* ISSPassTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86151FF04E0700FC440E /* ISSPassTimesTests.swift */; };
 		5F7F86211FF04E0700FC440E /* ISSPassTimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86201FF04E0700FC440E /* ISSPassTimesUITests.swift */; };
+		5F7F86331FF057DF00FC440E /* ISSPassTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86321FF057DF00FC440E /* ISSPassTimes.swift */; };
+		5F7F86361FF05B6700FC440E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86351FF05B6700FC440E /* Constant.swift */; };
+		5F7F86381FF05B8700FC440E /* ISSPassTimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86371FF05B8700FC440E /* ISSPassTimesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		5F7F85FD1FF04E0700FC440E /* ISSPassTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSPassTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7F86001FF04E0700FC440E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F7F86021FF04E0700FC440E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F7F86021FF04E0700FC440E /* ISSPassTimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimesViewController.swift; sourceTree = "<group>"; };
 		5F7F86051FF04E0700FC440E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F7F86071FF04E0700FC440E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F7F860A1FF04E0700FC440E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		5F7F861C1FF04E0700FC440E /* ISSPassTimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISSPassTimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7F86201FF04E0700FC440E /* ISSPassTimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimesUITests.swift; sourceTree = "<group>"; };
 		5F7F86221FF04E0700FC440E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F7F86321FF057DF00FC440E /* ISSPassTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimes.swift; sourceTree = "<group>"; };
+		5F7F86351FF05B6700FC440E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5F7F86371FF05B8700FC440E /* ISSPassTimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,12 @@
 		5F7F85FF1FF04E0700FC440E /* ISSPassTimes */ = {
 			isa = PBXGroup;
 			children = (
+				5F7F86341FF05B2000FC440E /* classes */,
+				5F7F862E1FF0571900FC440E /* view */,
+				5F7F86301FF0572800FC440E /* View model */,
+				5F7F862F1FF0572000FC440E /* Model */,
+				5F7F86311FF0573F00FC440E /* Resources */,
 				5F7F86001FF04E0700FC440E /* AppDelegate.swift */,
-				5F7F86021FF04E0700FC440E /* ViewController.swift */,
-				5F7F86041FF04E0700FC440E /* Main.storyboard */,
-				5F7F86071FF04E0700FC440E /* Assets.xcassets */,
-				5F7F86091FF04E0700FC440E /* LaunchScreen.storyboard */,
-				5F7F860C1FF04E0700FC440E /* Info.plist */,
 			);
 			path = ISSPassTimes;
 			sourceTree = "<group>";
@@ -123,6 +129,49 @@
 				5F7F86221FF04E0700FC440E /* Info.plist */,
 			);
 			path = ISSPassTimesUITests;
+			sourceTree = "<group>";
+		};
+		5F7F862E1FF0571900FC440E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5F7F86021FF04E0700FC440E /* ISSPassTimesViewController.swift */,
+				5F7F86041FF04E0700FC440E /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		5F7F862F1FF0572000FC440E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F7F86321FF057DF00FC440E /* ISSPassTimes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F7F86301FF0572800FC440E /* View model */ = {
+			isa = PBXGroup;
+			children = (
+				5F7F86371FF05B8700FC440E /* ISSPassTimesViewModel.swift */,
+			);
+			path = "View model";
+			sourceTree = "<group>";
+		};
+		5F7F86311FF0573F00FC440E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F7F86071FF04E0700FC440E /* Assets.xcassets */,
+				5F7F860C1FF04E0700FC440E /* Info.plist */,
+				5F7F86091FF04E0700FC440E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5F7F86341FF05B2000FC440E /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				5F7F86351FF05B6700FC440E /* Constant.swift */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F7F86031FF04E0700FC440E /* ViewController.swift in Sources */,
+				5F7F86331FF057DF00FC440E /* ISSPassTimes.swift in Sources */,
+				5F7F86031FF04E0700FC440E /* ISSPassTimesViewController.swift in Sources */,
+				5F7F86381FF05B8700FC440E /* ISSPassTimesViewModel.swift in Sources */,
 				5F7F86011FF04E0700FC440E /* AppDelegate.swift in Sources */,
+				5F7F86361FF05B6700FC440E /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
