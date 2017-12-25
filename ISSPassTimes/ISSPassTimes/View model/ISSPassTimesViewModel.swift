@@ -36,7 +36,8 @@ class ISSPassTimesViewModel:ISSPassTimesProtocol {
           self.latitude = location.coordinate.latitude
           self.longitude = location.coordinate.longitude
           //we are sure the latitude and longitude value exist ,hence we are force unwrapping the values.
-          self.fetchISSPassContent(latitude: self.latitude!, longitude:self.longitude!)
+          //passes is set as nil to accept default number of passes.
+          self.fetchISSPassContent(latitude: location.coordinate.latitude, longitude:location.coordinate.longitude,altitude: location.altitude,passes: nil)
           self.apiProgressState.value = .success(latitude:self.latitude,longitude:self.longitude)
         }
       case .Failure(let error):
@@ -51,9 +52,21 @@ class ISSPassTimesViewModel:ISSPassTimesProtocol {
    
    - parameter latitude: current latitude value
    - parameter longitude: current longitude value
+   - parameter altitude: current longitude optional value
+   - parameter longitude: current longitude optional value
+   - parameter passes: number passes optional value
    */
-  func fetchISSPassContent(latitude:Double,longitude:Double) {
-    let requestParams = ["lat":latitude,"lon":longitude]
+  func fetchISSPassContent(latitude:Double,longitude:Double,altitude:Double?,passes:Int?) {
+    self.latitude = latitude
+    self.longitude = longitude
+    var requestParams = ["lat":latitude,"lon":longitude] as [String : AnyObject]
+    if let altitude = altitude,altitude > 0{
+      requestParams["alt"] = altitude as AnyObject
+    }
+    if let passes = passes {
+      requestParams["n"] = passes as AnyObject
+    }
+    
     apiProgressState.value = .inProgress
     NetworkManager.get(API.passTimeUrl, parameters: requestParams as [String : AnyObject], success: {(result: NSDictionary) -> Void in
       self.parseISSData(result: result)

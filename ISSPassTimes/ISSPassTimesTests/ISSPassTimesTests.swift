@@ -114,12 +114,36 @@ class ISSPassTimesTests: XCTestCase {
     XCTAssertEqual(formattedDate, "2017-12-25 17:27:31")
   }
   
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+  func testfetchISSPassContent()  {
+    let viewModel = ISSPassTimesViewModel()
+    let _latitude = 37.7873589
+    let _longitude = -122.408227
+    let passes = 2
+    viewModel.fetchISSPassContent(latitude: _latitude, longitude: _longitude, altitude: nil, passes: passes)
+    let expect = expectation(description: "Wait for ISS pass API call")
+    viewModel.apiProgressState.bindFire { (value) in
+      switch value {
+      case .failed:
+        XCTFail("ISS pass API failed")
+        expect.fulfill()
+      case .success(let latitude,let longitude):
+        XCTAssertEqual(latitude, _latitude)
+        XCTAssertEqual(longitude, _longitude)
+        XCTAssertTrue(viewModel.modelArray.value.count <= passes, "Number of passes doesn't matches")
+        expect.fulfill()
+      default:
+        print("default do nothing")
+      }
     }
-    
+    wait(for: [expect], timeout: 60)
+  }
+  
+//    func testPerformanceExample() {
+//        // This is an example of a performance test case.
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
+  
 }
 

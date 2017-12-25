@@ -20,8 +20,11 @@ protocol ISSPassTimesProtocol {
    
    - parameter latitude: current latitude value
    - parameter longitude: current longitude value
+   - parameter altitude: current longitude optional value
+   - parameter longitude: current longitude optional value
+   - parameter passes: number passes optional value
    */
-  func fetchISSPassContent(latitude:Double,longitude:Double) -> Void
+  func fetchISSPassContent(latitude:Double,longitude:Double,altitude:Double?,passes:Int?) -> Void
   
   /**
    parseISSData method parses the API response
