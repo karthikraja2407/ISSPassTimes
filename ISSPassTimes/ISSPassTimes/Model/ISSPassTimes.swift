@@ -7,12 +7,21 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class ISSPassTimes {
   
-  var duration:Int?
-  var risetime:Int?
+  var duration:String?
+  var risetime:String?
   
-  init(json:[String:Any]){    
+  init(json:JSON){
+    if let duration = json["duration"].int {
+      self.duration = String(duration)
+    }
+    
+    if let risetime = json["risetime"].int {
+      let date = Date(timeIntervalSince1970:TimeInterval(risetime))
+      self.risetime = date.ReadableUTCDateFormatter()
+    }
   }
 }

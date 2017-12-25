@@ -9,5 +9,5 @@
 import Foundation
 
 public struct API {
-  static let passTimeUrl = ""
+  static let passTimeUrl = "http://api.open-notify.org/iss-pass.json"
 }

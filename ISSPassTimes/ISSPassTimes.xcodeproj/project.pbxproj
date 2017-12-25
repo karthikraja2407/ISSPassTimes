@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1020555BA8B00B472C0536D9 /* Pods_ISSPassTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFE7B042C2A7045D2908FBD /* Pods_ISSPassTimesUITests.framework */; };
 		4449DEDAE4697BEE31885CB1 /* Pods_ISSPassTimesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8C79E5E43367767577C73D /* Pods_ISSPassTimesTests.framework */; };
+		5F569C7E1FF0670C00CAB095 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F569C7D1FF0670C00CAB095 /* NetworkManager.swift */; };
+		5F569C811FF0791900CAB095 /* Locator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F569C801FF0791800CAB095 /* Locator.swift */; };
 		5F7F86011FF04E0700FC440E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86001FF04E0700FC440E /* AppDelegate.swift */; };
 		5F7F86031FF04E0700FC440E /* ISSPassTimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86021FF04E0700FC440E /* ISSPassTimesViewController.swift */; };
 		5F7F86061FF04E0700FC440E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F86041FF04E0700FC440E /* Main.storyboard */; };
@@ -19,6 +21,9 @@
 		5F7F86331FF057DF00FC440E /* ISSPassTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86321FF057DF00FC440E /* ISSPassTimes.swift */; };
 		5F7F86361FF05B6700FC440E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86351FF05B6700FC440E /* Constant.swift */; };
 		5F7F86381FF05B8700FC440E /* ISSPassTimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86371FF05B8700FC440E /* ISSPassTimesViewModel.swift */; };
+		5FEABA8E1FF0814500ACBC78 /* ISSPassTimesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEABA8D1FF0814500ACBC78 /* ISSPassTimesProtocol.swift */; };
+		5FEABA901FF08AF600ACBC78 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEABA8F1FF08AF600ACBC78 /* Dynamic.swift */; };
+		5FEABA921FF0A8C600ACBC78 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEABA911FF0A8C600ACBC78 /* DateExtension.swift */; };
 		C4DAC3EEA033A6B646C21674 /* Pods_ISSPassTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CEB5933BCA7644E44028E74 /* Pods_ISSPassTimes.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +51,8 @@
 		39FDCD2E87F1809A326172FA /* Pods-ISSPassTimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimesTests/Pods-ISSPassTimesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4EFE7B042C2A7045D2908FBD /* Pods_ISSPassTimesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSPassTimesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8C79E5E43367767577C73D /* Pods_ISSPassTimesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSPassTimesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F569C7D1FF0670C00CAB095 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5F569C801FF0791800CAB095 /* Locator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locator.swift; sourceTree = "<group>"; };
 		5F7F85FD1FF04E0700FC440E /* ISSPassTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSPassTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7F86001FF04E0700FC440E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F7F86021FF04E0700FC440E /* ISSPassTimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimesViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +69,9 @@
 		5F7F86321FF057DF00FC440E /* ISSPassTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimes.swift; sourceTree = "<group>"; };
 		5F7F86351FF05B6700FC440E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5F7F86371FF05B8700FC440E /* ISSPassTimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimesViewModel.swift; sourceTree = "<group>"; };
+		5FEABA8D1FF0814500ACBC78 /* ISSPassTimesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimesProtocol.swift; sourceTree = "<group>"; };
+		5FEABA8F1FF08AF600ACBC78 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		5FEABA911FF0A8C600ACBC78 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		60E7F4CC7E9B0B0D239D2E5B /* Pods-ISSPassTimesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimesUITests/Pods-ISSPassTimesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		62BC69C3897A0F144F38A5B9 /* Pods-ISSPassTimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimesTests/Pods-ISSPassTimesTests.release.xcconfig"; sourceTree = "<group>"; };
 		EFAFDA3BC393E7CA0A9C3245 /* Pods-ISSPassTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimes/Pods-ISSPassTimes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +118,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5F569C7C1FF066FC00CAB095 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5F569C7D1FF0670C00CAB095 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		5F7F85F41FF04E0700FC440E = {
 			isa = PBXGroup;
 			children = (
@@ -133,12 +151,15 @@
 		5F7F85FF1FF04E0700FC440E /* ISSPassTimes */ = {
 			isa = PBXGroup;
 			children = (
-				5F7F86341FF05B2000FC440E /* classes */,
 				5F7F862E1FF0571900FC440E /* view */,
 				5F7F86301FF0572800FC440E /* View model */,
 				5F7F862F1FF0572000FC440E /* Model */,
+				5FEABA8C1FF0812000ACBC78 /* Protocols */,
+				5F7F86341FF05B2000FC440E /* Helper */,
+				5F569C7C1FF066FC00CAB095 /* Network */,
 				5F7F86311FF0573F00FC440E /* Resources */,
 				5F7F86001FF04E0700FC440E /* AppDelegate.swift */,
+				5F7F860C1FF04E0700FC440E /* Info.plist */,
 			);
 			path = ISSPassTimes;
 			sourceTree = "<group>";
@@ -190,18 +211,28 @@
 			isa = PBXGroup;
 			children = (
 				5F7F86071FF04E0700FC440E /* Assets.xcassets */,
-				5F7F860C1FF04E0700FC440E /* Info.plist */,
 				5F7F86091FF04E0700FC440E /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		5F7F86341FF05B2000FC440E /* classes */ = {
+		5F7F86341FF05B2000FC440E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				5F7F86351FF05B6700FC440E /* Constant.swift */,
+				5F569C801FF0791800CAB095 /* Locator.swift */,
+				5FEABA8F1FF08AF600ACBC78 /* Dynamic.swift */,
+				5FEABA911FF0A8C600ACBC78 /* DateExtension.swift */,
 			);
-			path = classes;
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5FEABA8C1FF0812000ACBC78 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5FEABA8D1FF0814500ACBC78 /* ISSPassTimesProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		6943FE45CCCEC75B16E9F17A /* Frameworks */ = {
@@ -509,11 +540,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F569C811FF0791900CAB095 /* Locator.swift in Sources */,
+				5FEABA921FF0A8C600ACBC78 /* DateExtension.swift in Sources */,
 				5F7F86331FF057DF00FC440E /* ISSPassTimes.swift in Sources */,
 				5F7F86031FF04E0700FC440E /* ISSPassTimesViewController.swift in Sources */,
+				5FEABA901FF08AF600ACBC78 /* Dynamic.swift in Sources */,
 				5F7F86381FF05B8700FC440E /* ISSPassTimesViewModel.swift in Sources */,
 				5F7F86011FF04E0700FC440E /* AppDelegate.swift in Sources */,
+				5F569C7E1FF0670C00CAB095 /* NetworkManager.swift in Sources */,
 				5F7F86361FF05B6700FC440E /* Constant.swift in Sources */,
+				5FEABA8E1FF0814500ACBC78 /* ISSPassTimesProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
