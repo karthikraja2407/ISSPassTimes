@@ -21,6 +21,8 @@
 		5F7F86331FF057DF00FC440E /* ISSPassTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86321FF057DF00FC440E /* ISSPassTimes.swift */; };
 		5F7F86361FF05B6700FC440E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86351FF05B6700FC440E /* Constant.swift */; };
 		5F7F86381FF05B8700FC440E /* ISSPassTimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F86371FF05B8700FC440E /* ISSPassTimesViewModel.swift */; };
+		5FAEA04D1FF0DADA0058A43C /* ISSPassSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEA04C1FF0DADA0058A43C /* ISSPassSuccess.json */; };
+		5FAEA04F1FF0DAE90058A43C /* ISSPassFailure.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEA04E1FF0DAE90058A43C /* ISSPassFailure.json */; };
 		5FEABA8E1FF0814500ACBC78 /* ISSPassTimesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEABA8D1FF0814500ACBC78 /* ISSPassTimesProtocol.swift */; };
 		5FEABA901FF08AF600ACBC78 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEABA8F1FF08AF600ACBC78 /* Dynamic.swift */; };
 		5FEABA921FF0A8C600ACBC78 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEABA911FF0A8C600ACBC78 /* DateExtension.swift */; };
@@ -69,6 +71,8 @@
 		5F7F86321FF057DF00FC440E /* ISSPassTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimes.swift; sourceTree = "<group>"; };
 		5F7F86351FF05B6700FC440E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5F7F86371FF05B8700FC440E /* ISSPassTimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimesViewModel.swift; sourceTree = "<group>"; };
+		5FAEA04C1FF0DADA0058A43C /* ISSPassSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ISSPassSuccess.json; sourceTree = "<group>"; };
+		5FAEA04E1FF0DAE90058A43C /* ISSPassFailure.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ISSPassFailure.json; sourceTree = "<group>"; };
 		5FEABA8D1FF0814500ACBC78 /* ISSPassTimesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimesProtocol.swift; sourceTree = "<group>"; };
 		5FEABA8F1FF08AF600ACBC78 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		5FEABA911FF0A8C600ACBC78 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 			children = (
 				5F7F86151FF04E0700FC440E /* ISSPassTimesTests.swift */,
 				5F7F86171FF04E0700FC440E /* Info.plist */,
+				5FAEA04C1FF0DADA0058A43C /* ISSPassSuccess.json */,
+				5FAEA04E1FF0DAE90058A43C /* ISSPassFailure.json */,
 			);
 			path = ISSPassTimesTests;
 			sourceTree = "<group>";
@@ -371,6 +377,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FAEA04F1FF0DAE90058A43C /* ISSPassFailure.json in Resources */,
+				5FAEA04D1FF0DADA0058A43C /* ISSPassSuccess.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

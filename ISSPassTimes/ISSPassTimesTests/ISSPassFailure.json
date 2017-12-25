@@ -1,0 +1,4 @@
+{
+  "message": "failure",
+  "reason": "Latitude must be number between -90.0 and 90.0"
+}

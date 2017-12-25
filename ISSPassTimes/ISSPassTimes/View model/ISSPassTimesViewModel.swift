@@ -22,6 +22,11 @@ class ISSPassTimesViewModel:ISSPassTimesProtocol {
   var latitude:Double?
   var longitude:Double?
   
+  // MARK: - functional methods
+  
+  /**
+   fetchCurrentLocationIssPassTimes method fetches the list of ISS pass for the current location      
+   */
   func fetchCurrentLocationIssPassTimes() -> Void {
     self.apiProgressState.value = .inProgress
     Locator.shared.locate { (result) in
@@ -41,34 +46,47 @@ class ISSPassTimesViewModel:ISSPassTimesProtocol {
     }
   }
   
-  // MARK: - functional methods
-  //fetchISSPassContent -  This method fires a API request and fetches the data to load Collection View.
+  /**
+   fetchISSPassContent method fires a API request and fetches the data
+   
+   - parameter latitude: current latitude value
+   - parameter longitude: current longitude value
+   */
   func fetchISSPassContent(latitude:Double,longitude:Double) {
     let requestParams = ["lat":latitude,"lon":longitude]
     apiProgressState.value = .inProgress
     NetworkManager.get(API.passTimeUrl, parameters: requestParams as [String : AnyObject], success: {(result: NSDictionary) -> Void in
-      let jsonData = JSON(result)
-      if let message = jsonData["message"].string, message == "success"{
-        if let modelArray = jsonData["response"].array {
-          var responseArray = Array<ISSPassTimes>()
-          for jsonModel in modelArray {
-            let issPassTimeModel = ISSPassTimes(json: jsonModel)
-            responseArray.append(issPassTimeModel)
-          }
-          self.modelArray.value = responseArray
-          
-        }else{
-          self.modelArray.value = []
-        }
-        self.apiProgressState.value = .success(latitude:self.latitude,longitude:self.longitude)
-      }else{
-        self.apiProgressState.value = .failed
-      }
+      self.parseISSData(result: result)
     }, failure: {(error: NSDictionary?) -> Void in
       self.apiProgressState.value = .failed
       self.modelArray.value = []
       print ("Api Failure : error is:\n \(String(describing: error))")
     })
+  }
+  
+  /**
+   parseISSData method parses the API response
+   
+   - parameter result: API response data as NSDictionary
+   */
+  func parseISSData(result:NSDictionary) {
+    let jsonData = JSON(result)
+    if let message = jsonData["message"].string, message == "success"{
+      if let modelArray = jsonData["response"].array {
+        var responseArray = Array<ISSPassTimes>()
+        for jsonModel in modelArray {
+          let issPassTimeModel = ISSPassTimes(json: jsonModel)
+          responseArray.append(issPassTimeModel)
+        }
+        self.modelArray.value = responseArray
+        
+      }else{
+        self.modelArray.value = []
+      }
+      self.apiProgressState.value = .success(latitude:self.latitude,longitude:self.longitude)
+    }else{
+      self.apiProgressState.value = .failed
+    }
   }
   
 }

@@ -9,6 +9,8 @@
 import Foundation
 import MapKit
 
+//This class is used to fetch current location of the iOS device.
+
 class Locator: NSObject, CLLocationManagerDelegate {
   enum Result <T> {
     case Success(T)
@@ -34,6 +36,11 @@ class Locator: NSObject, CLLocationManagerDelegate {
   
   // MARK: - Helpers
   
+  /**
+   locate method is used to fetch the current location
+   
+   - parameter callback: passes success when device location determined else failure will be passed with the error object.
+   */
   func locate(callback:@escaping Callback) {
     self.requests.append(callback)
     sharedLocationManager.startUpdatingLocation()
@@ -44,7 +51,7 @@ class Locator: NSObject, CLLocationManagerDelegate {
     sharedLocationManager.stopUpdatingLocation()
   }
   
-  // MARK: - Delegate
+  // MARK: - CLLocation Delegate
   func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
     for request in self.requests { request(.Failure(error)) }
     reset()

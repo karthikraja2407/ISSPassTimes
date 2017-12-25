@@ -8,7 +8,14 @@
 
 import Foundation
 
+
 extension Date {
+  
+  /**
+   Date extension is used to format the date in a readable format.
+   
+   - returns: yyyy-MM-dd HH:mm:ss formatted string
+   */
   func ReadableUTCDateFormatter() -> String {
     let formatter = DateFormatter()
     let timeZone = TimeZone(identifier: "UTC")!

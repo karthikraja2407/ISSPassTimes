@@ -12,7 +12,21 @@ protocol ISSPassTimesProtocol {
   var modelArray:Dynamic<Array<ISSPassTimes>> {get}
   var latitude:Double? {get}
   var longitude:Double? {get}
+  
   // MARK: - functional methods
-  //fetContent -  This method fires a GET API request and fetches the list of ISS passes.
+  
+  /**
+   fetchISSPassContent method fires a API request and fetches the data
+   
+   - parameter latitude: current latitude value
+   - parameter longitude: current longitude value
+   */
   func fetchISSPassContent(latitude:Double,longitude:Double) -> Void
+  
+  /**
+   parseISSData method parses the API response
+   
+   - parameter result: API response data as NSDictionary
+   */
+  func parseISSData(result:NSDictionary) -> Void
 }

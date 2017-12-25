@@ -14,6 +14,11 @@ class ISSPassTimes {
   var duration:String?
   var risetime:String?
   
+  /**
+   init method initialize the ISSPassTimes
+   
+   - parameter json: API response data of type JSON
+   */
   init(json:JSON){
     if let duration = json["duration"].int {
       self.duration = String(duration)

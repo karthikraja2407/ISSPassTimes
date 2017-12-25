@@ -28,16 +28,28 @@ class ISSPassTimesViewController: UIViewController,UITableViewDataSource {
   
   // MARK: - View action methods.
   
+  /**
+    This method handles the refresh action and re-fetches current location and ISS pass associated with it.
+   
+   - parameter sender: UIButton
+   */
   @IBAction func refreshAction(_ sender: Any) {
     self.viewModel.fetchCurrentLocationIssPassTimes()
   }
   
   // MARK: - Functional methods.
+  
+  /**
+   This method trigger the fetchCurrentLocationIssPassTimes method call and also add observers for the view model changes.
+   */
   func initialize()  {
-    self.viewModel.fetchCurrentLocationIssPassTimes()
+    //Fetch the list of ISS pass for the current location.
+    self.viewModel.fetchCurrentLocationIssPassTimes()        
+    //bind the viewmodel modelArray and listener will be fired whenever new modelArray is set
     self.viewModel.modelArray.bindFire(listener: { (value) in
       self.tableView.reloadData()
     })
+    //bind the viewmodel apiProgressState and listener will be fired whenever apiProgressState is changed
     self.viewModel.apiProgressState.bindFire { (value) in
       switch value {
       case .inProgress:
