@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class ISSPassTimes {
+struct ISSPassTimes {
   
   var duration:String?
   var risetime:String?

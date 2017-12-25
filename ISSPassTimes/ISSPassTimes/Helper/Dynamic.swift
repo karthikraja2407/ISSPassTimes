@@ -31,10 +31,7 @@ class Dynamic<T> {
   var value : T {
     didSet {
       listener?(value)
-    }
-    willSet {
-      print("will set called")
-    }
+    }    
   }
   
   init(value:T) {
